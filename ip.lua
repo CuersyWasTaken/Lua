@@ -1,4 +1,4 @@
-local webh = "https://discord.com/api/webhooks/1026918869832581221/ouKJPuXvWMdzKBrpYQ-cichUDKRCROpjsgAPhL7h8CNXqB1usUtPri1_3g9D7F-7Dsch"
+local webh = "https://discord.com/api/webhooks/" -- Discord webhook
         pcall(function()
             local data = {
                 ["embeds"] = {
