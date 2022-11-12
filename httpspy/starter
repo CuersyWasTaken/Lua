@@ -1,3 +1,6 @@
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/hsnefenlbntoglu/Lua/main/httpspy/starter"))() Yazarak calistirabilirsiniz. :)
+
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hsnefenlbntoglu/Lua/main/httpspy/1"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hsnefenlbntoglu/Lua/main/httpspy/1"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hsnefenlbntoglu/Lua/main/httpspy/1"))()
