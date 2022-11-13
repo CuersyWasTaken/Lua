@@ -831,7 +831,7 @@ Anims.MouseButton1Click:Connect(function()
 end)
  -- Wauxy
 how_4.MouseButton1Click:Connect(function()
-    for i = 1, 3000 do  local A_1 = "pasta" local Event = game:GetService("ReplicatedStorage"):FindFirstChild("PJR") Event:FireServer(A_1)   end wait(5) for i = 1, 3000 do  local A_1 = "pasta" local Event = game:GetService("ReplicatedStorage"):FindFirstChild("PJR") Event:FireServer(A_1)   end
+    for i = 1, 5000 do  local A_1 = "pasta" local Event = game:GetService("ReplicatedStorage"):FindFirstChild("PJR") Event:FireServer(A_1)   end wait(5) for i = 1, 6000 do  local A_1 = "pasta" local Event = game:GetService("ReplicatedStorage"):FindFirstChild("PJR") Event:FireServer(A_1)   end
 end)
 
 ------------------------------------------------------------------
