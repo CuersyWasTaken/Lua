@@ -162,7 +162,6 @@ return(function(...)
     (({...})[1])[1]=(({...})[2])()['game'];
 ]] .. "\n" .. loadstringName .. "=loadstring;"
 end
---Obfuscating
 local count = 1
 for i,v in pairs(scriptContent) do
     if count == 1 then
@@ -285,7 +284,7 @@ decc('\73\32\115\97\121\32\110\97\121\32\110\42\42\97\32\110\97\121\32\110\97\12
 (({...})[1])[tonumber(__l_I_llI('3836'))]=(({...})[1])[tonumber(__l_I_llI('3835'))] .. __l_I_llI('22290a41');
 ]]
 
-newScript = newScript .. [[decc(__l_I_llI(']] .. enc([[__i_l_llil = loadstring]]) .. "'))();" --Add check var
+newScript = newScript .. [[decc(__l_I_llI(']] .. enc([[__i_l_llil = loadstring]]) .. "'))();" 
 
 if options["ConstantEncode"] then
     newScript = newScript .. "if __i_l_lli == __i_l_llil then __i_l_lli" .. "(" .. "(({...})[1])[tonumber(__l_I_llI('" .. enc(tostring(count-1)) .. "'))])() else while true do end end"
@@ -336,7 +335,7 @@ end
 
 newScript = newScript .. " end)({},getfenv,table.remove)"
 
---Add enc
+
 
 local algorithm = tostring([[ local ]] .. __l_I_llIX .. [[ = tonumber(']] .. ToBytecode(tostring(keyO)) .. [[') local ]] .. __l_I_llIY .. [[= tonumber(']] .. ToBytecode(tostring(keyT)) .. [[') local inv256 function __l_I_llI(str) local K, F =]] .. __l_I_llIX .. [[, 16384 + ]] .. __l_I_llIY .. [[ return (str:gsub('%x%x', function(c) local L = K % 274877906944 local H = (K - L) / 274877906944 local M = H % 128 c = tonumber(c, 16) local m = (c + (H - M) / 128) * (2*M + 1) % 256 K = L * F + H + c + m return string.char(m) end )) end; __i_l_lli=loadstring; if loadstring ~= print and loadstring ~= warn and loadstring ~= setclipboard and loadstring ~= writefile then else while true do end end]])
 local Encoded = EncodeBinary(algorithm)
