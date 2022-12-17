@@ -1,4 +1,4 @@
-local Cuersy = {}
+local Kavo = {}
 
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
@@ -7,7 +7,7 @@ local run = game:GetService("RunService")
 
 local Utility = {}
 local Objects = {}
-function Cuersy:DraggingEnabled(frame, parent)
+function Kavo:DraggingEnabled(frame, parent)
         
     parent = parent or frame
     
@@ -19,7 +19,7 @@ function Cuersy:DraggingEnabled(frame, parent)
         if input.UserInputType == Enum.UserInputType.MouseButton1 then
             dragging = true
             mousePos = input.Position
-            framePos = parent.Position
+            framePos = parent.Positi    on
             
             input.Changed:Connect(function()
                 if input.UserInputState == Enum.UserInputState.End then
@@ -126,7 +126,7 @@ local SettingsT = {
 
 }
 
-local Name = "CuersyConfig.JSON"
+local Name = "KavoConfig.JSON"
 
 pcall(function()
 
@@ -139,7 +139,7 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
-function Cuersy:ToggleUI()
+function Kavo:ToggleUI()
     if game.CoreGui[LibName].Enabled then
         game.CoreGui[LibName].Enabled = false
     else
@@ -147,7 +147,7 @@ function Cuersy:ToggleUI()
     end
 end
 
-function Cuersy.CreateLib(kavName, themeList)
+function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
     end
@@ -186,7 +186,7 @@ function Cuersy.CreateLib(kavName, themeList)
     themeList = themeList or {}
     local selectedTab 
     kavName = kavName or "Library"
-    table.insert(Cuersy, kavName)
+    table.insert(Kavo, kavName)
     for i,v in pairs(game.CoreGui:GetChildren()) do
         if v:IsA("ScreenGui") and v.Name == kavName then
             v:Destroy()
@@ -211,7 +211,7 @@ function Cuersy.CreateLib(kavName, themeList)
 
     local blurFrame = Instance.new("Frame")
 
-    Cuersy:DraggingEnabled(MainHeader, Main)
+    Kavo:DraggingEnabled(MainHeader, Main)
 
     blurFrame.Name = "blurFrame"
     blurFrame.Parent = pages
@@ -352,7 +352,7 @@ function Cuersy.CreateLib(kavName, themeList)
         end
     end)()
 
-    function Cuersy:ChangeColor(prope,color)
+    function Kavo:ChangeColor(prope,color)
         if prope == "Background" then
             themeList.Background = color
         elseif prope == "SchemeColor" then
@@ -2642,4 +2642,4 @@ function Cuersy.CreateLib(kavName, themeList)
     end  
     return Tabs
 end
-return Cuersy
+return Kavo
